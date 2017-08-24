@@ -1,8 +1,6 @@
 function mentionsPredicate(str) {
   if (!str) {
     return false;
-  } else if (str.length === 0) {
-    return false;
   } else if (str.indexOf('@') < 0) {
     return false;
   } else if (str[str.length - 1] === '@') {
