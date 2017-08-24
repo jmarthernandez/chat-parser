@@ -8,15 +8,13 @@ test('mentionsPredicate', function (t) {
     var message = stringifyMessage(f.str, f.expected);
     t.deepEqual(mentions.mentionsPredicate(f.str), f.expected, message);
   })
-
   t.end();
 })
 
-test('get mentions', function (t) {
+test('getMentions', function (t) {
   mentionFixtures.mentions.forEach(function (f) {
     var message = stringifyMessage(f.arr, f.expected);
     t.deepEqual(mentions.getMentions(f.arr), f.expected, message);
   })
-
   t.end();
 })
