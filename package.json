@@ -4,9 +4,13 @@
   "description": "chat parser for hipchat",
   "main": "index.js",
   "scripts": {
+    "docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
     "lint": "eslint index.js src/ test/",
     "test": "istanbul cover tape test/**/*.js",
-    "test:watch": "tape-watch test/**/*.js | tap-spec"
+    "test:watch": "tape-watch test/**/*.js | tap-spec",
+    "postversion": "git push --tags origin HEAD",
+    "prepublish": "npm-run-all lint test",
+    "preversion": "npm-run-all lint test docs && npm update --save"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,9 @@
   "devDependencies": {
     "eslint": "^4.5.0",
     "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.4",
+    "minami": "^1.2.3",
+    "npm-run-all": "^4.0.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0",
     "tape-watch": "^2.3.0"

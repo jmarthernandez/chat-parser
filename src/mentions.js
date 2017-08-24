@@ -1,3 +1,8 @@
+/**
+ * Makes sure string matches the @mention convention
+ * @func
+ * @param {str}
+ */
 function mentionsPredicate(str) {
   // null/empty check
   if (!str) {
@@ -18,6 +23,11 @@ function mentionsPredicate(str) {
   return true;
 }
 
+/**
+ * Parses tokenized array into mention strings
+ * @func
+ * @param {array} arr - a chat input string split on whitespace
+ */
 function getMentions(arr) {
   return arr
     .filter(mentionsPredicate)

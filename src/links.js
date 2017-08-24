@@ -4,7 +4,11 @@ var request = axios.create({
   baseURL: 'https://cors-anywhere.herokuapp.com/'
 });
 
-
+/**
+ * Parses tokenized array into links
+ * @func
+ * @param {array} arr - a chat input string split on whitespace
+ */
 module.exports = function getLinks(arr) {
   var urls = arr
     .filter(function (str) {
