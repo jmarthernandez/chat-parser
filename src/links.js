@@ -1,8 +1,7 @@
 var isURL = require('validator').isURL;
 var axios = require('axios');
 var request = axios.create({
-  baseURL: 'https://cors-anywhere.herokuapp.com/',
-  headers: {'Origin': 'foobar'}
+  baseURL: 'https://cors-anywhere.herokuapp.com/'
 });
 
 

@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       arr: ['@(test)', '@-(megusta)-'],
-      expected: []
+      expected: ['test', 'megusta']
     },
     {
       arr: ['(hello)', '(megusta), ((megusta)mucho)', '((megusta))'],
@@ -25,49 +25,17 @@ module.exports = {
       expected: []
     },
     {
-      arr: ['(--)'],
+      arr: ['(--a)'],
       expected: []
     },
   ],
   emoticonsPredicate: [
     {
-      str: '',
-      expected: false
-    },
-    {
-      str: 't()st',
-      expected: false
-    },
-    {
-      str: '()st',
-      expected: false
-    },
-    {
       str: '(megusta)',
       expected: true
     },
     {
-      str: '((megusta)mucho)',
-      expected: true
-    },
-    {
-      str: '((test))',
-      expected: true
-    },
-    {
-      str: '(test',
-      expected: false
-    },
-    {
-      str: '@(test)',
-      expected: false
-    },
-    {
-      str: '@-/~test/',
-      expected: false
-    },
-    {
-      str: '@test',
+      str: '(megus-ta)',
       expected: false
     },
   ],
