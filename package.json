@@ -4,8 +4,7 @@
   "description": "chat parser for hipchat",
   "main": "index.js",
   "scripts": {
-    "cover": "istanbul cover tape test/**/*.js",
-    "test": "tape test/**/*.js | tap-spec",
+    "test": "istanbul cover tape test/**/*.js",
     "test:watch": "tape-watch test/**/*.js | tap-spec"
   },
   "repository": {
