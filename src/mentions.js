@@ -3,6 +3,10 @@ function mentionsPredicate(str) {
     return false;
   } else if (str.indexOf('@') < 0) {
     return false;
+  } else if (str[0] !== '@') {
+    return false;
+  } else if ((/[^\w\s]/).test(str.slice(1))) {
+    return false;
   } else if (str[str.length - 1] === '@') {
     return false
   }

@@ -9,7 +9,7 @@ module.exports = {
       expected: []
     },
     {
-      arr: ['@justin'],
+      arr: ['@justin', '@-megusta-'],
       expected: ['justin']
     },
     {
@@ -35,6 +35,10 @@ module.exports = {
       expected: false
     },
     {
+      str: 'te@st',
+      expected: false
+    },
+    {
       str: null,
       expected: false
     },
@@ -44,6 +48,14 @@ module.exports = {
     },
     {
       str: '@test@',
+      expected: false
+    },
+    {
+      str: '@(test)',
+      expected: false
+    },
+    {
+      str: '@-/~test/',
       expected: false
     },
     {
