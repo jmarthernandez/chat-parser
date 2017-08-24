@@ -1,6 +1,6 @@
 {
   "name": "hipchat-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "chat parser for hipchat",
   "main": "index.js",
   "scripts": {
