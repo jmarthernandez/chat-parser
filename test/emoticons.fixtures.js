@@ -13,8 +13,8 @@ module.exports = {
       expected: []
     },
     {
-      arr: ['(hello)', '(megusta)'],
-      expected: ['hello', 'megusta']
+      arr: ['(hello)', '(megusta), ((megusta)mucho)', '((megusta))'],
+      expected: ['hello', 'megusta', 'megusta', 'megusta']
     },
     {
       arr: ['@'],
@@ -47,8 +47,12 @@ module.exports = {
       expected: true
     },
     {
+      str: '((megusta)mucho)',
+      expected: true
+    },
+    {
       str: '((test))',
-      expected: false
+      expected: true
     },
     {
       str: '(test',
