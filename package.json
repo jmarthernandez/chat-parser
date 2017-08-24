@@ -1,9 +1,10 @@
 {
-  "name": "chat-parser",
+  "name": "hipchat-parser",
   "version": "1.0.0",
   "description": "chat parser for hipchat",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint index.js src/ test/",
     "test": "istanbul cover tape test/**/*.js",
     "test:watch": "tape-watch test/**/*.js | tap-spec"
   },
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/jmarthernandez/chat-parser#readme",
   "devDependencies": {
+    "eslint": "^4.5.0",
     "istanbul": "^0.4.5",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0",

@@ -9,7 +9,7 @@ test('emoticonsPredicate', function (t) {
     t.deepEqual(emoticons.emoticonsPredicate(f.str), f.expected, message);
   });
   t.end();
-})
+});
 
 test('getEmoticons', function (t) {
   emoticonFixtures.emoticons.forEach(function (f) {
@@ -17,4 +17,4 @@ test('getEmoticons', function (t) {
     t.deepEqual(emoticons.getEmoticons(f.arr), f.expected, message);
   });
   t.end();
-})
+});

@@ -3,7 +3,7 @@ var getEmoticons = require('./emoticons').getEmoticons;
 var getLinks = require('./links');
 
 function tokenize (str) {
-  return str.match(/\S+/g) || []
+  return str.match(/\S+/g) || [];
 }
 
 function parse (str) {
@@ -21,4 +21,4 @@ function parse (str) {
 module.exports = {
   tokenize: tokenize,
   parse: parse,
-}
+};

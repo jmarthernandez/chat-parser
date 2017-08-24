@@ -16,7 +16,7 @@ function emoticonsPredicate(str) {
     return false;
   // if ends with )
   } else if (str[str.length - 1] !== ')') {
-    return false
+    return false;
   }
   return true;
 }
@@ -32,4 +32,4 @@ function getEmoticons(arr) {
 module.exports = {
   getEmoticons: getEmoticons,
   emoticonsPredicate: emoticonsPredicate,
-}
+};

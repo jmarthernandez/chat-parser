@@ -13,7 +13,7 @@ function mentionsPredicate(str) {
     return false;
   // if ends with @
   } else if (str[str.length - 1] === '@') {
-    return false
+    return false;
   }
   return true;
 }
@@ -29,4 +29,4 @@ function getMentions(arr) {
 module.exports = {
   mentionsPredicate: mentionsPredicate,
   getMentions: getMentions,
-}
+};

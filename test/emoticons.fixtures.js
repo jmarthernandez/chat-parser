@@ -38,7 +38,7 @@ module.exports = {
       str: 't()st',
       expected: false
     },
-        {
+    {
       str: '()st',
       expected: false
     },
@@ -71,4 +71,4 @@ module.exports = {
       expected: false
     },
   ],
-}
+};

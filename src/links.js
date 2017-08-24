@@ -9,13 +9,13 @@ var request = axios.create({
 module.exports = function getLinks(arr) {
   var urls = arr
     .filter(function (str) {
-      return isURL(str)
-    })
+      return isURL(str);
+    });
 
   var reqs = urls
     .map(function (url) {
-      return request.get(url)
-    })
+      return request.get(url);
+    });
 
   return axios.all(reqs)
     .then(axios.spread(function () {
@@ -26,5 +26,5 @@ module.exports = function getLinks(arr) {
             title: r.data.match(/<title[^>]*>([^<]+)<\/title>/)[1]
           };
         });
-    }))
-}
+    }));
+};
