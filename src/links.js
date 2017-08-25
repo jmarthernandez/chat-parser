@@ -19,7 +19,7 @@ module.exports = function getLinks(arr) {
     .map(function (url) {
       var protocol = url.indexOf('://');
       if (protocol) {
-        var shortned = url.slice(protocol + 3)
+        var shortned = url.slice(protocol + 3);
         return request.get(shortned);
       }
       return request.get(url);
